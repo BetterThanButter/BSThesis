@@ -1,6 +1,7 @@
 import argparse
 import torch
 
+
 def get_config():
     parser = argparse.ArgumentParser(description='Neural Large Neighborhood Search')
 
@@ -47,5 +48,3 @@ def get_config():
     config_d['lns_timelimit_validation'] = config.lns_timelimit * (config.valid_size / config.test_size)
 
     return config
-
-
